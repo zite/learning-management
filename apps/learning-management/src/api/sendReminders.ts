@@ -22,7 +22,7 @@ const Output = z.object({
 
 export default createEndpoint({
   description: 'Send daily due-date, overdue, manager, recertification, certificate and session reminders',
-  // Like merit's scheduled job: no `authenticated` flag, so the cron fire (which has no session) is never refused.
+  // No `authenticated` flag: the cron fire has no session, and would be refused if this asked for one.
   schedule: {
     scheduleType: 'recurring',
     schedule: { frequency: 'daily', interval: 1, times: ['14:00'] },
