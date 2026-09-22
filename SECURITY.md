@@ -13,7 +13,7 @@ we'll include you.
 ## Scope
 
 This repository is a **template**. It is installed into a workspace that you run, so
-a report against it is about the application code here — endpoint authorization, data
+a report against it is about the application code here: endpoint authorization, data
 exposure between people or organizations, injection through user-supplied content,
 that kind of thing.
 
@@ -25,12 +25,12 @@ go to security@zite.com too, but say which you mean.
 - The demo data is public sample content, including a passphrase used as a quiz
   answer. It is illustrative, not a credential.
 - The certificate verification page is deliberately public and unauthenticated. It
-  discloses only the recipient name, course title and issue/expiry dates — that is
+  discloses only the recipient name, course title and issue/expiry dates, which is
   what verification is for.
 - The Learner Portal is an external app. Which strangers can sign in is a per-install
   policy under **Settings → Academy**, not a code-level guarantee.
 
 ## Supported versions
 
-This is a template, not a released library — fixes land on `main` and you pick them
-up by merging. There are no maintained release branches.
+This is a template rather than a released library. Fixes land on `main` and you pick
+them up by merging. There are no maintained release branches.

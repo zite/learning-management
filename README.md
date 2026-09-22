@@ -1,11 +1,12 @@
 <p align="center">
-  <img alt="Learning Management — courses, compliance training, live sessions and certificates" src=".github/assets/hero.png">
+  <img alt="Learning Management: courses, compliance training, live sessions and certificates" src=".github/assets/hero.png">
 </p>
 
 <h3 align="center">Learning Management</h3>
 
 <p align="center">
-  The open-source LMS for compliance training, live sessions and certificates.
+  Open-source learning management: courses, compliance training, live sessions
+  and certificates.
   <br/>
   An open alternative to <b>TalentLMS</b>, <b>Docebo</b> and <b>360Learning</b>.
 </p>
@@ -31,10 +32,10 @@
 Training for a whole organization: build courses, assign them by rule, track
 compliance, run live sessions and issue certificates.
 
-It is a **Zite solution** — a complete workspace you can install and own, not a
-service you rent. [Zite](https://zite.com) gives you a Postgres database, an
-endpoint runtime, auth and hosting; everything above that is the ~76,000 lines of
-TypeScript in this repository. Fork it, change it, and it is yours.
+This is a **Zite solution**, meaning a workspace you install into your own
+[Zite](https://zite.com) account and then edit. Zite provides the Postgres
+database, the endpoint runtime, auth and hosting. Everything above that is the
+~76,000 lines of TypeScript in this repository.
 
 Two apps share one database:
 
@@ -43,9 +44,9 @@ Two apps share one database:
 | **Learning Management** | `apps/learning-management` | Admins and instructors: build courses and paths, enroll people, grade, run sessions, report on compliance | Internal (organization members) |
 | **Learner Portal** | `apps/learner-portal` | Learners and their managers: take courses, register for sessions, earn certificates, follow their team's progress | External (public, with sign-in) |
 
-It opens on a populated demo — Fernwood Supply Co., 39 people, 12 courses, 4
-learning paths and a year of history — so it is usable the moment it is installed,
-and there is a one-click way to delete all of it when you are ready for real data.
+It opens on a populated demo: Fernwood Supply Co., with 39 people, 12 courses, 4
+learning paths and a year of history, so every screen has something in it the
+first time you look. Settings has a one-click way to delete all of it.
 
 <p align="center">
   <img alt="The admin console: active learners, completions, on-time rate, and everything that needs a person" src=".github/assets/admin-home.png">
@@ -58,9 +59,9 @@ and there is a one-click way to delete all of it when you are ready for real dat
 ### For admins and instructors
 
 - **Home.** Active learners, completions and on-time rate against the previous
-  period; everything that needs a person — submissions to grade, unanswered learner
-  questions, overdue training by course, stalled learners, expiring certificates —
-  plus upcoming sessions and recent completions.
+  period, plus everything that needs a person: submissions to grade, unanswered
+  learner questions, overdue training by course, stalled learners and expiring
+  certificates. Upcoming sessions and recent completions sit alongside.
 
 - **Course builder.** Sections and eight lesson types: article (Markdown), video
   (YouTube, Vimeo, Loom, Wistia or an upload, with an optional watch requirement on
@@ -92,7 +93,7 @@ and there is a one-click way to delete all of it when you are ready for real dat
   import; each person's transcript, certificates, sessions and activity.
 
 - **Assignment rules.** Enroll everyone, or chosen groups, in a course or path with a
-  due date — including people who join later — and optionally repeat it every N
+  due date, including people who join later, and optionally repeat it every N
   months as recertification. Preview who a rule reaches before running it.
 
 - **Grading, inbox and discussions.** A grading queue with rubric, grade and feedback
@@ -123,7 +124,7 @@ and there is a one-click way to delete all of it when you are ready for real dat
 
 - **Daily reminders.** A scheduled job (14:00 UTC) sends due-date and overdue
   reminders, a weekly digest to managers of overdue reports, certificate-expiry
-  warnings and session reminders — each at most once per window — and opens
+  warnings and session reminders, each at most once per window, and opens
   recertification cycles when certificates near expiry.
 
 - **Everywhere:** ⌘K command menu, global search, `?` for every shortcut, light and
@@ -154,8 +155,8 @@ and there is a one-click way to delete all of it when you are ready for real dat
 
 ## Install it in your own workspace
 
-Zite is agent-native: you install this the same way you would build anything else on
-it — by pointing your coding agent at the platform and letting it drive.
+Zite apps are built by pointing a coding agent at the platform over MCP, and
+installing one works the same way.
 
 **1. Connect the Zite MCP server to your agent.**
 
@@ -163,7 +164,7 @@ it — by pointing your coding agent at the platform and letting it drive.
 claude mcp add --transport http zite https://mcp.zite.com/mcp
 ```
 
-(Cursor, VS Code and any other MCP client work the same way — see
+(Cursor, VS Code and any other MCP client work the same way. See
 [the Zite quickstart](https://developers.zite.com/quickstart).)
 
 **2. Give it this prompt.**
@@ -175,7 +176,7 @@ claude mcp add --transport http zite https://mcp.zite.com/mcp
 >    `/workspace`, keeping the sandbox's own `zite.config.json`.
 > 3. Read `zite.schema.json` and create all 24 tables with `create_table`, passing
 >    each field's `definition` (`name`, `type`, `template`) straight through. Do this
->    **before** `create_app` — `create_app` and `check_app` refresh
+>    **before** `create_app`, because `create_app` and `check_app` refresh
 >    `zite.schema.json` from the live database, and would otherwise blank it.
 > 4. `create_app` "Learning Management" (internal) and "Learner Portal" (external).
 >    Use those names exactly: the directory is derived from the name, and these two
@@ -190,7 +191,7 @@ real data, go to **Settings → Data → Remove demo data**, which deletes every
 seed created and keeps anything you have added since.
 
 <details>
-<summary>Then make it yours</summary>
+<summary>Setting it up for your own organization</summary>
 
 1. **Publish both apps.** The admin app is internal; the Learner Portal is external
    with sign-in. Open the Learner Portal once so links in emails point at it.
@@ -220,12 +221,12 @@ that matters:
 | `apps/*/src/` minus `api/` | The browser. A normal Vite + React SPA. |
 | `apps/*/src/api/*.ts` | Zite's endpoint runtime, server-side. One file = one endpoint. |
 | `packages/*` | Imported by both. No build step; consumed as TypeScript source. |
-| `.zite/` | Generated clients — typed DB access and a typed caller. Never edited by hand. |
+| `.zite/` | Generated clients: typed DB access and a typed caller. Never edited by hand. |
 
 The frontend never touches the database. It calls endpoints through a generated typed
 client (`import { getHome } from 'zitejs/api'`), and endpoints reach the database
-through another (`import { zite } from 'zitejs/db'`). 97 endpoints — 65 admin, 32
-learner.
+through another (`import { zite } from 'zitejs/db'`). 97 endpoints: 65 admin and
+32 learner.
 
 ```
 learning-management/
@@ -239,12 +240,12 @@ learning-management/
 │       ├── src/api/           32 endpoints
 │       └── src/pages/         14 pages
 ├── packages/
-│   ├── shared/                the domain core — imported by BOTH apps
+│   ├── shared/                the domain core, imported by BOTH apps
 │   │   ├── progress.ts        statuses, due states, points
 │   │   ├── lessons.ts         the 8 lesson types, quiz grading
 │   │   └── server/enroll.ts   the progress engine
 │   └── components/            shadcn/ui, vendored
-└── zite.schema.json           24 tables — the database, as a file
+└── zite.schema.json           24 tables, the database as a file
 ```
 
 ### The data model
@@ -267,8 +268,8 @@ AssignmentRules · Notifications · Activity · EmailTemplates · Views · Setti
 
 **Progress is derived, completion is final.** An enrollment's progress, status and
 due state are recomputed from `LessonProgress` by one engine
-(`packages/shared/server/enroll.ts`) that every write path calls — the player,
-grading, attendance, bulk actions. Once an enrollment completes it stays complete;
+(`packages/shared/server/enroll.ts`) that every write path calls: the player,
+grading, attendance and bulk actions. Once an enrollment completes it stays complete;
 editing the course afterwards doesn't reopen it.
 
 **Recertification is a new cycle, not a reset.** A rule that repeats every N months
@@ -281,8 +282,8 @@ so nothing goes stale overnight.
 
 **Lesson settings and answers are JSON.** Each lesson type's settings are parsed by
 `packages/shared/lessons.ts`, which also grades quizzes and strips answers before
-anything reaches a learner. **The server re-validates everything** — Zite doesn't
-enforce an endpoint's `inputSchema`.
+anything reaches a learner. **The server re-validates everything**, because Zite
+does not enforce an endpoint's `inputSchema`.
 
 **Both apps share `packages/shared`.** The progress engine, grading, brand colour
 maths, certificate artwork, lesson media and server helpers are imported by both
@@ -313,14 +314,14 @@ yarn dev:learner-portal       # learner portal on :8081
 ```
 
 **What works offline:** the whole frontend, `tsc`, and `vite build`. Editing a
-component hot-reloads as you would expect.
+component hot-reloads.
 
 **What does not:** the endpoints in `src/api/` execute on Zite's runtime against your
 workspace database, not on your machine. `yarn dev` serves the UI, but every endpoint
 call goes out to the workspace named in `.env.local` and needs a session for that
 organization. There is no local database mode yet.
 
-Run `yarn generate` after adding, renaming or deleting an endpoint — it regenerates
+Run `yarn generate` after adding, renaming or deleting an endpoint. It regenerates
 `.zite/` so `zitejs/api` sees the new name.
 
 ```bash
@@ -329,7 +330,7 @@ yarn run check    # tsc + endpoint bundling + vite build, both apps
 
 > **Note.** On an app this size `zitejs check` prints `bundle endpoints ✗` with no
 > error and exits non-zero. That is a 1 MB stdout buffer in the checker, not a real
-> failure — the `tsc` and `vite build` lines above it are trustworthy. To see genuine
+> failure. The `tsc` and `vite build` lines above it are trustworthy. To see genuine
 > endpoint errors, bundle to a file instead:
 > `npx zitejs bundle --app learning-management > /tmp/b.json` and read `endpointErrors`.
 
@@ -344,11 +345,11 @@ uploads, schedules) · [Claude](https://www.anthropic.com) for the optional AI f
 
 ## Contributing
 
-Issues and pull requests are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) for how
+Issues and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for how
 to get a workspace to develop against and what we look for in a change. Bugs and
 feature ideas go in [Issues](https://github.com/zite/learning-management/issues);
 anything security-related goes to [SECURITY.md](SECURITY.md) instead.
 
 ## License
 
-MIT — see [LICENSE](LICENSE). Third-party notices in [NOTICE](NOTICE).
+MIT. See [LICENSE](LICENSE). Third-party notices in [NOTICE](NOTICE).

@@ -12,7 +12,7 @@
      surface at runtime. Say which endpoints or screens you actually exercised,
      and against what data. -->
 
-- [ ] `yarn run check` — `tsc` and `vite build` lines clean for both apps
+- [ ] `yarn run check`, with the `tsc` and `vite build` lines clean for both apps
 - [ ] `yarn generate` run (if an endpoint was added, renamed or deleted)
 - [ ] Exercised against a real workspace, not just a type-check
 - [ ] Checked the screens this touches at phone width, in light and dark

@@ -56,8 +56,8 @@ body:
     attributes:
       label: Errors
       description: >
-        Anything in the browser console, and — if an endpoint failed — the run in
-        your workspace's logs. Redact anything private first.
+        Anything in the browser console, plus the run in your workspace's logs if
+        an endpoint failed. Redact anything private first.
       render: text
 
   - type: input

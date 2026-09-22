@@ -27,7 +27,7 @@ body:
     id: scope
     attributes:
       label: Does this belong in the template, or in your fork?
-      description: An honest answer here helps a lot — plenty of good ideas are fork-shaped.
+      description: An honest answer here helps a lot. Plenty of good ideas are fork-shaped.
       options:
         - Most installs would want this
         - Common enough to be worth an option
