@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /*
+     * Paper and ink. A warm neutral ground, near-black ink for primary actions
+     * and selection, and one warm "flame" reserved for brand moments
+     * (certificates, streaks, the mark). Colour carries meaning only through
+     * the tone tokens below — never as decoration.
+     */
+    --canvas: 36 14% 95.5%;
+    --background: 40 22% 99.4%;
+    --foreground: 30 10% 11%;
+    --card: 40 22% 99.4%;
+    --card-foreground: 30 10% 11%;
+    --popover: 40 22% 99.4%;
+    --popover-foreground: 30 10% 11%;
+    --muted: 36 12% 93.5%;
+    /* 5.9:1 on the page — secondary text stays readable, not decorative. */
+    --muted-foreground: 30 6% 37%;
+    /* Tertiary text for timestamps and counts: 4.8:1. */
+    --faint: 30 5% 43%;
+    --subtle: 38 18% 97.3%;
+    --border: 36 10% 88.5%;
+    /* A form control's border is often the only thing marking the control, so it carries 3:1. */
+    --input: 32 6% 58%;
+    --primary: 30 10% 12%;
+    --primary-foreground: 40 30% 98%;
+    --secondary: 36 12% 93%;
+    --secondary-foreground: 30 10% 14%;
+    --accent: 36 12% 92.5%;
+    --accent-foreground: 30 10% 11%;
+    --destructive: 356 68% 45%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 30 10% 20%;
+    --radius: 0.5rem;
+
+    --sidebar-background: 36 14% 95.5%;
+    --sidebar-foreground: 30 6% 32%;
+    --sidebar-primary: 30 10% 12%;
+    --sidebar-primary-foreground: 40 30% 98%;
+    --sidebar-accent: 36 12% 90.5%;
+    --sidebar-accent-foreground: 30 10% 11%;
+    --sidebar-border: 36 10% 89%;
+    --sidebar-ring: 30 10% 20%;
+
+    /* Data colour lives in components/reports/viz.tsx; these mirror its light slots. */
+    --chart-1: 212 47% 45%;
+    --chart-2: 17 82% 56%;
+    --chart-3: 159 73% 40%;
+    --chart-4: 41 100% 46%;
+    --chart-5: 337 70% 70%;
+
+    /* Semantic tones as RGB channels, each >= 4.5:1 against the page. */
+    --tone-warning: 166 82 10;
+    --tone-info: 36 98 145;
+    --tone-success: 22 118 66;
+    --tone-danger: 190 32 48;
+    --tone-accent: 33 102 120;
+    --tone-neutral: 104 99 92;
+    /* The brand flame: logo, streaks, certificates. Decorative only, never text on paper. */
+    --flame: 234 150 22;
+
+    --shadow-2xs: 0 1px 0 rgb(40 30 20 / 0.035);
+    --shadow-xs: 0 1px 2px rgb(40 30 20 / 0.06);
+    --shadow-sm: 0 1px 2px rgb(40 30 20 / 0.07), 0 1px 1px rgb(40 30 20 / 0.03);
+    --shadow: 0 2px 4px rgb(40 30 20 / 0.07), 0 1px 2px rgb(40 30 20 / 0.04);
+    --shadow-md: 0 4px 12px rgb(40 30 20 / 0.09), 0 1px 3px rgb(40 30 20 / 0.05);
+    --shadow-lg: 0 12px 32px rgb(40 30 20 / 0.13), 0 2px 6px rgb(40 30 20 / 0.06);
+    --shadow-xl: 0 24px 56px rgb(40 30 20 / 0.17), 0 4px 12px rgb(40 30 20 / 0.08);
+    --shadow-2xl: 0 32px 80px rgb(40 30 20 / 0.22);
+
+    --grid-line: 36 10% 90%;
+    --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --font-serif: 'Source Serif 4', ui-serif, Georgia, 'Times New Roman', serif;
+    --font-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+  }
+
+  .dark {
+    /* Warm charcoal, so the paper feeling survives the lights going out. */
+    --canvas: 30 6% 5.5%;
+    --background: 30 5% 8.3%;
+    --foreground: 40 14% 92%;
+    --card: 30 5% 9.4%;
+    --card-foreground: 40 14% 92%;
+    --popover: 30 5% 10.5%;
+    --popover-foreground: 40 14% 92%;
+    --muted: 30 5% 13%;
+    --muted-foreground: 36 7% 65%;
+    --faint: 36 5% 56%;
+    --subtle: 30 5% 9.8%;
+    --border: 30 5% 15.5%;
+    --input: 30 4% 36%;
+    --primary: 40 16% 91%;
+    --primary-foreground: 30 10% 8%;
+    --secondary: 30 5% 14%;
+    --secondary-foreground: 40 12% 91%;
+    --accent: 30 5% 14.5%;
+    --accent-foreground: 40 14% 94%;
+    --destructive: 356 70% 60%;
+    --destructive-foreground: 30 10% 6%;
+    --ring: 40 16% 78%;
+
+    --sidebar-background: 30 6% 5.5%;
+    --sidebar-foreground: 36 6% 67%;
+    --sidebar-primary: 40 16% 91%;
+    --sidebar-primary-foreground: 30 10% 8%;
+    --sidebar-accent: 30 5% 12.5%;
+    --sidebar-accent-foreground: 40 14% 94%;
+    --sidebar-border: 30 5% 12%;
+    --sidebar-ring: 40 16% 78%;
+
+    --chart-1: 213 52% 63%;
+    --chart-2: 17 70% 50%;
+    --chart-3: 159 73% 36%;
+    --chart-4: 40 100% 39%;
+    --chart-5: 338 61% 58%;
+
+    /* Re-stepped for the dark surface, not flipped: all >= 7:1 on it. */
+    --tone-warning: 245 186 72;
+    --tone-info: 125 184 236;
+    --tone-success: 104 208 150;
+    --tone-danger: 244 128 128;
+    --tone-accent: 112 196 214;
+    --tone-neutral: 170 163 153;
+    --flame: 250 190 70;
+
+    --shadow-xs: 0 1px 2px rgb(0 0 0 / 0.4);
+    --shadow-sm: 0 1px 3px rgb(0 0 0 / 0.45);
+    --shadow: 0 2px 6px rgb(0 0 0 / 0.45);
+    --shadow-md: 0 6px 16px rgb(0 0 0 / 0.5), 0 0 0 1px rgb(255 255 255 / 0.03);
+    --shadow-lg: 0 16px 40px rgb(0 0 0 / 0.55), 0 0 0 1px rgb(255 255 255 / 0.04);
+    --shadow-xl: 0 24px 64px rgb(0 0 0 / 0.6), 0 0 0 1px rgb(255 255 255 / 0.05);
+    --shadow-2xl: 0 32px 90px rgb(0 0 0 / 0.7);
+
+    --grid-line: 30 5% 15%;
+  }
+
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    color-scheme: light;
+  }
+  html.dark {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-canvas text-foreground antialiased;
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: 'cv01', 'cv02', 'cv03', 'cv04', 'cv11', 'ss03';
+    overscroll-behavior: none;
+  }
+
+  ::selection {
+    background: rgb(var(--flame) / 0.32);
+  }
+
+  :focus-visible {
+    outline: 2px solid hsl(var(--ring) / 0.6);
+    outline-offset: 1px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground) / 0.22);
+    border-radius: 999px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground) / 0.4);
+    background-clip: content-box;
+  }
+}
+
+@layer components {
+  .kbd {
+    @apply inline-flex h-[20px] min-w-[20px] items-center justify-center rounded-[4px] border px-1 font-sans text-[11.5px] font-medium leading-none;
+    background: hsl(var(--muted));
+    color: hsl(var(--muted-foreground));
+    border-color: hsl(var(--border));
+    box-shadow: 0 1px 0 hsl(var(--border));
+  }
+
+  .skeleton {
+    background: linear-gradient(90deg, hsl(var(--muted)) 0%, hsl(var(--accent)) 50%, hsl(var(--muted)) 100%);
+    background-size: 200% 100%;
+    @apply animate-shimmer rounded;
+  }
+
+  /* A compact, borderless control that reveals itself on hover — property chips, inline pickers. */
+  .ghost-chip {
+    @apply inline-flex h-8 max-w-full items-center gap-1.5 rounded-md border border-transparent px-2 text-[14px] text-foreground transition-colors;
+  }
+  .ghost-chip:hover,
+  .ghost-chip[data-state='open'] {
+    @apply bg-accent;
+  }
+
+  /* A quiet pill for answer values and metadata. */
+  .chip-soft {
+    @apply inline-flex max-w-full items-center rounded-md bg-muted px-2 py-0.5 text-[14px] leading-5 text-foreground;
+  }
+
+  /* Markdown inside help text and short descriptions: no prose margins. */
+  .md-compact :where(p) {
+    margin: 0;
+  }
+  .md-compact :where(p + p) {
+    margin-top: 0.5em;
+  }
+  .md-compact :where(ul, ol) {
+    margin: 0.35em 0 0;
+    padding-left: 1.2em;
+  }
+  .md-compact :where(ul) {
+    list-style: disc;
+  }
+  .md-compact :where(ol) {
+    list-style: decimal;
+  }
+  .md-compact :where(strong) {
+    font-weight: 600;
+    color: hsl(var(--foreground));
+  }
+
+  .chip {
+    @apply inline-flex h-7 max-w-full items-center gap-1.5 whitespace-nowrap rounded-full border px-2.5 text-xs text-foreground transition-colors;
+  }
+
+  .prose-lms {
+    @apply prose prose-sm max-w-none dark:prose-invert;
+    --tw-prose-body: hsl(var(--foreground));
+    --tw-prose-headings: hsl(var(--foreground));
+    --tw-prose-bold: hsl(var(--foreground));
+    --tw-prose-links: hsl(var(--primary));
+    --tw-prose-code: hsl(var(--foreground));
+    --tw-prose-pre-bg: hsl(var(--muted));
+    --tw-prose-pre-code: hsl(var(--foreground));
+    --tw-prose-quotes: hsl(var(--muted-foreground));
+    --tw-prose-quote-borders: hsl(var(--border));
+    --tw-prose-bullets: hsl(var(--muted-foreground));
+    --tw-prose-counters: hsl(var(--muted-foreground));
+    --tw-prose-hr: hsl(var(--border));
+    --tw-prose-invert-body: hsl(var(--foreground));
+    --tw-prose-invert-headings: hsl(var(--foreground));
+    --tw-prose-invert-bold: hsl(var(--foreground));
+    --tw-prose-invert-links: hsl(var(--primary));
+    --tw-prose-invert-code: hsl(var(--foreground));
+    --tw-prose-invert-pre-bg: hsl(var(--muted));
+    --tw-prose-invert-pre-code: hsl(var(--foreground));
+    --tw-prose-invert-quotes: hsl(var(--muted-foreground));
+    --tw-prose-invert-quote-borders: hsl(var(--border));
+    --tw-prose-invert-bullets: hsl(var(--muted-foreground));
+    --tw-prose-invert-counters: hsl(var(--muted-foreground));
+    --tw-prose-invert-hr: hsl(var(--border));
+    font-size: 15px;
+    line-height: 1.65;
+  }
+  .prose-lms :where(p) {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  .prose-lms :where(h1, h2, h3) {
+    margin-top: 1.1em;
+    margin-bottom: 0.45em;
+    letter-spacing: -0.01em;
+  }
+  .prose-lms :where(h1) { font-size: 1.35em; }
+  .prose-lms :where(h2) { font-size: 1.15em; }
+  .prose-lms :where(h3) { font-size: 1em; }
+  .prose-lms :where(ul, ol) {
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+  }
+  .prose-lms :where(li) {
+    margin-top: 0.15em;
+    margin-bottom: 0.15em;
+  }
+  .prose-lms :where(code):not(:where(pre code)) {
+    @apply rounded bg-muted px-1 py-0.5 text-[0.85em] font-normal;
+  }
+  .prose-lms :where(code)::before,
+  .prose-lms :where(code)::after {
+    content: none;
+  }
+  .prose-lms :where(pre) {
+    @apply rounded-md border text-[13.5px];
+  }
+  .prose-lms :where(> :first-child) {
+    margin-top: 0;
+  }
+  .prose-lms :where(> :last-child) {
+    margin-bottom: 0;
+  }
+  .prose-lms ul[data-type='taskList'],
+  .prose-lms ul:has(> li > input[type='checkbox']) {
+    list-style: none;
+    padding-left: 0.25em;
+  }
+  .prose-lms li:has(> input[type='checkbox']) {
+    display: flex;
+    gap: 0.5em;
+    align-items: baseline;
+  }
+
+  /* Tiptap renders a task item as <li><label><input/></label><div><p/></div></li>. */
+  .lms-editor ul[data-type='taskList'] {
+    list-style: none;
+    padding-left: 0.1em;
+  }
+  .lms-editor ul[data-type='taskList'] li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.55em;
+    margin: 0.2em 0;
+  }
+  .lms-editor ul[data-type='taskList'] li > label {
+    flex-shrink: 0;
+    margin-top: 0.3em;
+    user-select: none;
+  }
+  .lms-editor ul[data-type='taskList'] li > label input {
+    accent-color: hsl(var(--primary));
+    cursor: pointer;
+  }
+  .lms-editor ul[data-type='taskList'] li > div {
+    flex: 1;
+    min-width: 0;
+  }
+  .lms-editor ul[data-type='taskList'] li > div > p {
+    margin: 0;
+  }
+  .lms-editor ul[data-type='taskList'] li[data-checked='true'] > div {
+    color: hsl(var(--muted-foreground));
+    text-decoration: line-through;
+    text-decoration-color: hsl(var(--muted-foreground) / 0.5);
+  }
+  .lms-editor .tiptap {
+    min-height: inherit;
+  }
+
+  /* Tiptap editor */
+  .lms-editor .tiptap {
+    outline: none;
+  }
+  .lms-editor .tiptap p.is-editor-empty:first-child::before {
+    content: attr(data-placeholder);
+    float: left;
+    height: 0;
+    pointer-events: none;
+    color: hsl(var(--muted-foreground) / 0.8);
+  }
+
+  .scrollbar-none {
+    scrollbar-width: none;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/*
+ * shadcn's overlay is black/80 — far heavier than a work tool's dialogs should feel.
+ * Outside @layer on purpose: inside a Tailwind layer these compound selectors get variant-expanded into broken rules.
+ */
+div[data-state].fixed.inset-0.z-50[class*='bg-black'] {
+  background-color: hsl(30 12% 8% / 0.3);
+  backdrop-filter: blur(1.5px);
+}
+.dark div[data-state].fixed.inset-0.z-50[class*='bg-black'] {
+  background-color: hsl(30 12% 2% / 0.58);
+}

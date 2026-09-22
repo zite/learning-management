@@ -1,0 +1,3619 @@
+{
+  "tables": [
+    {
+      "id": "tqupd4TiHJ3",
+      "sdkName": "settings",
+      "name": "Settings",
+      "primaryFieldId": "fiRmxWveBQE",
+      "fields": [
+        {
+          "id": "fiRmxWveBQE",
+          "sdkName": "organizationName",
+          "definition": {
+            "name": "Organization Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fx61JHzovJg",
+          "sdkName": "logoUrl",
+          "definition": {
+            "name": "Logo Url",
+            "type": "url",
+            "template": {}
+          }
+        },
+        {
+          "id": "f3jqNc5gvkb",
+          "sdkName": "websiteUrl",
+          "definition": {
+            "name": "Website Url",
+            "type": "url",
+            "template": {}
+          }
+        },
+        {
+          "id": "fbeAoAmnZMc",
+          "sdkName": "supportEmail",
+          "definition": {
+            "name": "Support Email",
+            "type": "email",
+            "template": {}
+          }
+        },
+        {
+          "id": "fffnanZCgs8",
+          "sdkName": "brandColor",
+          "definition": {
+            "name": "Brand Color",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fwFAbQghGkE",
+          "sdkName": "academyName",
+          "definition": {
+            "name": "Academy Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "foQPBkZ1twU",
+          "sdkName": "academyHeadline",
+          "definition": {
+            "name": "Academy Headline",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "frd6pTE5icz",
+          "sdkName": "academyIntro",
+          "definition": {
+            "name": "Academy Intro",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fpsQAQhwZfF",
+          "sdkName": "signInPolicy",
+          "definition": {
+            "name": "Sign In Policy",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "c4jr",
+                  "label": "Invited only",
+                  "color": "purple"
+                },
+                {
+                  "value": "o98P",
+                  "label": "Allowed domains",
+                  "color": "orange"
+                },
+                {
+                  "value": "irK5",
+                  "label": "Anyone",
+                  "color": "blue"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "frccwUP9CR4",
+          "sdkName": "allowedDomains",
+          "definition": {
+            "name": "Allowed Domains",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fjjEu48z5Ch",
+          "sdkName": "selfEnrollment",
+          "definition": {
+            "name": "Self Enrollment",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "f4Rw47x9Fzd",
+          "sdkName": "leaderboardEnabled",
+          "definition": {
+            "name": "Leaderboard Enabled",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "fro7j1zFGr6",
+          "sdkName": "discussionsEnabled",
+          "definition": {
+            "name": "Discussions Enabled",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "fid82ifLXjj",
+          "sdkName": "defaultStaffRole",
+          "definition": {
+            "name": "Default Staff Role",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "i2Gj",
+                  "label": "Instructor",
+                  "color": "purple"
+                },
+                {
+                  "value": "rp5T",
+                  "label": "Learner",
+                  "color": "orange"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f12bWyT1K2G",
+          "sdkName": "reminderDaysBefore",
+          "definition": {
+            "name": "Reminder Days Before",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "frXeSkEktdc",
+          "sdkName": "escalateOverdue",
+          "definition": {
+            "name": "Escalate Overdue",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "fxaN9o4Trwm",
+          "sdkName": "emailSignature",
+          "definition": {
+            "name": "Email Signature",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f9eExfrYzR9",
+          "sdkName": "certificateTitle",
+          "definition": {
+            "name": "Certificate Title",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fr2UtsecwnQ",
+          "sdkName": "certificateSignatory",
+          "definition": {
+            "name": "Certificate Signatory",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fhqTqob6HhB",
+          "sdkName": "certificateSignatoryTitle",
+          "definition": {
+            "name": "Certificate Signatory Title",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f8yTbGvZ14C",
+          "sdkName": "timezone",
+          "definition": {
+            "name": "Timezone",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fpFgQ5NmMvG",
+          "sdkName": "seededAt",
+          "definition": {
+            "name": "Seeded At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fuSki36u4UG",
+          "sdkName": "learnUrl",
+          "definition": {
+            "name": "Learn Url",
+            "type": "url",
+            "template": {}
+          }
+        },
+        {
+          "id": "fn2hDUoJgpr",
+          "sdkName": "adminAppUrl",
+          "definition": {
+            "name": "Admin App Url",
+            "type": "url",
+            "template": {}
+          }
+        }
+      ]
+    },
+    {
+      "id": "td1juTdX1KD",
+      "sdkName": "people",
+      "name": "People",
+      "primaryFieldId": "ftMjqmu6aHq",
+      "fields": [
+        {
+          "id": "ftMjqmu6aHq",
+          "sdkName": "name",
+          "definition": {
+            "name": "Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ffXgCV7Zyeo",
+          "sdkName": "email",
+          "definition": {
+            "name": "Email",
+            "type": "email",
+            "template": {}
+          }
+        },
+        {
+          "id": "f4uYTMw3fvy",
+          "sdkName": "role",
+          "definition": {
+            "name": "Role",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "sfWZ",
+                  "label": "Admin",
+                  "color": "purple"
+                },
+                {
+                  "value": "rzQQ",
+                  "label": "Instructor",
+                  "color": "orange"
+                },
+                {
+                  "value": "cSb4",
+                  "label": "Learner",
+                  "color": "blue"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fpnowau8UVs",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "eVVu",
+                  "label": "Active",
+                  "color": "purple"
+                },
+                {
+                  "value": "pRur",
+                  "label": "Invited",
+                  "color": "orange"
+                },
+                {
+                  "value": "r7mi",
+                  "label": "Deactivated",
+                  "color": "blue"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fbRi7urQzNu",
+          "sdkName": "title",
+          "definition": {
+            "name": "Title",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f2ztngBcjD9",
+          "sdkName": "managerId",
+          "definition": {
+            "name": "Manager Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fepyPcKaBVJ",
+          "sdkName": "hireDate",
+          "definition": {
+            "name": "Hire Date",
+            "type": "date",
+            "template": {
+              "dateFormat": "local"
+            }
+          }
+        },
+        {
+          "id": "f2n7Gyby2UH",
+          "sdkName": "externalId",
+          "definition": {
+            "name": "External Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fx8iExqAMfq",
+          "sdkName": "avatarUrl",
+          "definition": {
+            "name": "Avatar Url",
+            "type": "url",
+            "template": {}
+          }
+        },
+        {
+          "id": "fpYK3719KSv",
+          "sdkName": "color",
+          "definition": {
+            "name": "Color",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ftHLE3h5jEL",
+          "sdkName": "bio",
+          "definition": {
+            "name": "Bio",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fnAWchCCBup",
+          "sdkName": "muteEmails",
+          "definition": {
+            "name": "Mute Emails",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "f4W3p537y22",
+          "sdkName": "invitedAt",
+          "definition": {
+            "name": "Invited At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fdLoS3fXN2Q",
+          "sdkName": "lastSeenAt",
+          "definition": {
+            "name": "Last Seen At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "f4QcxA6tH14",
+          "sdkName": "lastLearnedAt",
+          "definition": {
+            "name": "Last Learned At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "frtNcswGu6t",
+          "sdkName": "deactivatedAt",
+          "definition": {
+            "name": "Deactivated At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tfZutDNGCBt",
+      "sdkName": "groups",
+      "name": "Groups",
+      "primaryFieldId": "fn6MMaJXe2N",
+      "fields": [
+        {
+          "id": "fn6MMaJXe2N",
+          "sdkName": "name",
+          "definition": {
+            "name": "Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fgoCEt9viRg",
+          "sdkName": "kind",
+          "definition": {
+            "name": "Kind",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "5CX9",
+                  "label": "Department",
+                  "color": "purple"
+                },
+                {
+                  "value": "d3Z4",
+                  "label": "Team",
+                  "color": "orange"
+                },
+                {
+                  "value": "7Lat",
+                  "label": "Location",
+                  "color": "blue"
+                },
+                {
+                  "value": "uRTA",
+                  "label": "Cohort",
+                  "color": "gray"
+                },
+                {
+                  "value": "8oz3",
+                  "label": "Customer",
+                  "color": "red"
+                },
+                {
+                  "value": "umfx",
+                  "label": "Partner",
+                  "color": "yellow"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fx8JKm7Enx3",
+          "sdkName": "description",
+          "definition": {
+            "name": "Description",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fiiyAxC5A7H",
+          "sdkName": "color",
+          "definition": {
+            "name": "Color",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "foYP6EFggeH",
+          "sdkName": "ownerId",
+          "definition": {
+            "name": "Owner Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ftxwhDjzcPf",
+          "sdkName": "position",
+          "definition": {
+            "name": "Position",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "t4EEs5wy7pU",
+      "sdkName": "groupMembers",
+      "name": "Group Members",
+      "primaryFieldId": "f47Br6mYnbd",
+      "fields": [
+        {
+          "id": "f47Br6mYnbd",
+          "sdkName": "groupId",
+          "definition": {
+            "name": "Group Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fgtrFVK6Ukw",
+          "sdkName": "personId",
+          "definition": {
+            "name": "Person Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f9gD6SsQMtF",
+          "sdkName": "addedAt",
+          "definition": {
+            "name": "Added At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fkpEKkbWKGm",
+          "sdkName": "addedById",
+          "definition": {
+            "name": "Added By Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        }
+      ]
+    },
+    {
+      "id": "twNETQVQ98e",
+      "sdkName": "categories",
+      "name": "Categories",
+      "primaryFieldId": "fauHH4sZdsA",
+      "fields": [
+        {
+          "id": "fauHH4sZdsA",
+          "sdkName": "name",
+          "definition": {
+            "name": "Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fqzVNfkJUua",
+          "sdkName": "description",
+          "definition": {
+            "name": "Description",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fd4w5auGGqW",
+          "sdkName": "color",
+          "definition": {
+            "name": "Color",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fgoYo8Ldibt",
+          "sdkName": "icon",
+          "definition": {
+            "name": "Icon",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "famBAPipLt8",
+          "sdkName": "position",
+          "definition": {
+            "name": "Position",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tjiWQCAnU73",
+      "sdkName": "courses",
+      "name": "Courses",
+      "primaryFieldId": "fkwgFVxKTpj",
+      "fields": [
+        {
+          "id": "fkwgFVxKTpj",
+          "sdkName": "title",
+          "definition": {
+            "name": "Title",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fkF3Jt4UY4w",
+          "sdkName": "slug",
+          "definition": {
+            "name": "Slug",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ffX76Ff4YBN",
+          "sdkName": "summary",
+          "definition": {
+            "name": "Summary",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f1Fhf4EGCjs",
+          "sdkName": "description",
+          "definition": {
+            "name": "Description",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f46QwBM5nmW",
+          "sdkName": "objectives",
+          "definition": {
+            "name": "Objectives",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f3KhyvYCrYn",
+          "sdkName": "coverImageUrl",
+          "definition": {
+            "name": "Cover Image Url",
+            "type": "url",
+            "template": {}
+          }
+        },
+        {
+          "id": "fau2eUigCGa",
+          "sdkName": "icon",
+          "definition": {
+            "name": "Icon",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f33hDByaaUW",
+          "sdkName": "color",
+          "definition": {
+            "name": "Color",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fk17mDMoDxq",
+          "sdkName": "categoryId",
+          "definition": {
+            "name": "Category Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f9SNPWghvgk",
+          "sdkName": "level",
+          "definition": {
+            "name": "Level",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "vTDu",
+                  "label": "Beginner",
+                  "color": "purple"
+                },
+                {
+                  "value": "9oeS",
+                  "label": "Intermediate",
+                  "color": "orange"
+                },
+                {
+                  "value": "6Cim",
+                  "label": "Advanced",
+                  "color": "blue"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "friuNN8frEs",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "xvaV",
+                  "label": "Draft",
+                  "color": "purple"
+                },
+                {
+                  "value": "fPoX",
+                  "label": "Published",
+                  "color": "orange"
+                },
+                {
+                  "value": "tFsc",
+                  "label": "Archived",
+                  "color": "blue"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f5Cf42NSDQZ",
+          "sdkName": "visibility",
+          "definition": {
+            "name": "Visibility",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "pbSP",
+                  "label": "Catalog",
+                  "color": "purple"
+                },
+                {
+                  "value": "d3UT",
+                  "label": "Private",
+                  "color": "orange"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fpGUyaWhWeA",
+          "sdkName": "ownerId",
+          "definition": {
+            "name": "Owner Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fjDun5cJkfq",
+          "sdkName": "instructorIds",
+          "definition": {
+            "name": "Instructor Ids",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fuSqjdf4STj",
+          "sdkName": "sequential",
+          "definition": {
+            "name": "Sequential",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "fmUUBz8ZqV7",
+          "sdkName": "estimatedMinutes",
+          "definition": {
+            "name": "Estimated Minutes",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "fj9DdTLeXoV",
+          "sdkName": "dueDays",
+          "definition": {
+            "name": "Due Days",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "fcFym8GntAK",
+          "sdkName": "certificateEnabled",
+          "definition": {
+            "name": "Certificate Enabled",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "f8RHtNJMjfk",
+          "sdkName": "certificateValidityMonths",
+          "definition": {
+            "name": "Certificate Validity Months",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "f4sxQKQRdJs",
+          "sdkName": "skills",
+          "definition": {
+            "name": "Skills",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f9iGZ2ii1WM",
+          "sdkName": "publishedAt",
+          "definition": {
+            "name": "Published At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fqhZhTxM4pw",
+          "sdkName": "position",
+          "definition": {
+            "name": "Position",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tmDcrXwUZdC",
+      "sdkName": "sections",
+      "name": "Sections",
+      "primaryFieldId": "fb6RgGircxp",
+      "fields": [
+        {
+          "id": "fb6RgGircxp",
+          "sdkName": "title",
+          "definition": {
+            "name": "Title",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fkQybXpPnSD",
+          "sdkName": "courseId",
+          "definition": {
+            "name": "Course Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fen4ZQQeQgC",
+          "sdkName": "description",
+          "definition": {
+            "name": "Description",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f24sbFY57x9",
+          "sdkName": "position",
+          "definition": {
+            "name": "Position",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tsbKZuqYWq5",
+      "sdkName": "lessons",
+      "name": "Lessons",
+      "primaryFieldId": "fc7e73ortX6",
+      "fields": [
+        {
+          "id": "fc7e73ortX6",
+          "sdkName": "title",
+          "definition": {
+            "name": "Title",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fiDFXqsFc1V",
+          "sdkName": "courseId",
+          "definition": {
+            "name": "Course Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ftrZuaFMX1r",
+          "sdkName": "sectionId",
+          "definition": {
+            "name": "Section Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fkCW5HXJHgw",
+          "sdkName": "type",
+          "definition": {
+            "name": "Type",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "6zkv",
+                  "label": "Article",
+                  "color": "purple"
+                },
+                {
+                  "value": "n8b4",
+                  "label": "Video",
+                  "color": "orange"
+                },
+                {
+                  "value": "wfAi",
+                  "label": "Quiz",
+                  "color": "blue"
+                },
+                {
+                  "value": "uXt1",
+                  "label": "Assignment",
+                  "color": "gray"
+                },
+                {
+                  "value": "eVuA",
+                  "label": "File",
+                  "color": "red"
+                },
+                {
+                  "value": "t6fz",
+                  "label": "Embed",
+                  "color": "yellow"
+                },
+                {
+                  "value": "t5P7",
+                  "label": "Live session",
+                  "color": "green"
+                },
+                {
+                  "value": "kDwf",
+                  "label": "Checklist",
+                  "color": "pink"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fiF3jALn9e8",
+          "sdkName": "body",
+          "definition": {
+            "name": "Body",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f2kBTcNbVnM",
+          "sdkName": "mediaUrl",
+          "definition": {
+            "name": "Media Url",
+            "type": "url",
+            "template": {}
+          }
+        },
+        {
+          "id": "fh1RN2eBNvy",
+          "sdkName": "mediaName",
+          "definition": {
+            "name": "Media Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fhq4y3SGpnh",
+          "sdkName": "settings",
+          "definition": {
+            "name": "Settings",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fcNdj5gYcMt",
+          "sdkName": "durationMinutes",
+          "definition": {
+            "name": "Duration Minutes",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "fkUTu47YtkR",
+          "sdkName": "optional",
+          "definition": {
+            "name": "Optional",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "fb4WA9KJBcb",
+          "sdkName": "position",
+          "definition": {
+            "name": "Position",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tkttxGJaFYn",
+      "sdkName": "paths",
+      "name": "Paths",
+      "primaryFieldId": "fphaPsSp3eF",
+      "fields": [
+        {
+          "id": "fphaPsSp3eF",
+          "sdkName": "title",
+          "definition": {
+            "name": "Title",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f47idiH1ZT1",
+          "sdkName": "slug",
+          "definition": {
+            "name": "Slug",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f75DWg75YB1",
+          "sdkName": "summary",
+          "definition": {
+            "name": "Summary",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fbhGnmjDZnY",
+          "sdkName": "description",
+          "definition": {
+            "name": "Description",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f75bdKnLkMp",
+          "sdkName": "coverImageUrl",
+          "definition": {
+            "name": "Cover Image Url",
+            "type": "url",
+            "template": {}
+          }
+        },
+        {
+          "id": "fiei5N1sSR5",
+          "sdkName": "icon",
+          "definition": {
+            "name": "Icon",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f84b1Wnwbeu",
+          "sdkName": "color",
+          "definition": {
+            "name": "Color",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ff3sxbY1ZC5",
+          "sdkName": "categoryId",
+          "definition": {
+            "name": "Category Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fcpFj3kXJMc",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "oQHM",
+                  "label": "Draft",
+                  "color": "purple"
+                },
+                {
+                  "value": "rPx7",
+                  "label": "Published",
+                  "color": "orange"
+                },
+                {
+                  "value": "ssE4",
+                  "label": "Archived",
+                  "color": "blue"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "f1sH55rodm7",
+          "sdkName": "visibility",
+          "definition": {
+            "name": "Visibility",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "vtTH",
+                  "label": "Catalog",
+                  "color": "purple"
+                },
+                {
+                  "value": "tV8E",
+                  "label": "Private",
+                  "color": "orange"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "faTHNaa1VUN",
+          "sdkName": "ownerId",
+          "definition": {
+            "name": "Owner Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fnGTqREkXf2",
+          "sdkName": "sequential",
+          "definition": {
+            "name": "Sequential",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "fqb67DBzVAo",
+          "sdkName": "dueDays",
+          "definition": {
+            "name": "Due Days",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "fgzi7cp1ZDT",
+          "sdkName": "certificateEnabled",
+          "definition": {
+            "name": "Certificate Enabled",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "fh7GgGjupaH",
+          "sdkName": "certificateValidityMonths",
+          "definition": {
+            "name": "Certificate Validity Months",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "fujvFHusXes",
+          "sdkName": "publishedAt",
+          "definition": {
+            "name": "Published At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "f5wewLx4ujE",
+          "sdkName": "position",
+          "definition": {
+            "name": "Position",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "txsafmDk3VF",
+      "sdkName": "pathCourses",
+      "name": "Path Courses",
+      "primaryFieldId": "fan2mqbU1WQ",
+      "fields": [
+        {
+          "id": "fan2mqbU1WQ",
+          "sdkName": "pathId",
+          "definition": {
+            "name": "Path Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f1nXVaxhrLC",
+          "sdkName": "courseId",
+          "definition": {
+            "name": "Course Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fcUuQoqiFQq",
+          "sdkName": "position",
+          "definition": {
+            "name": "Position",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "fhMpJh5jJWA",
+          "sdkName": "optional",
+          "definition": {
+            "name": "Optional",
+            "type": "checkbox",
+            "template": {}
+          }
+        }
+      ]
+    },
+    {
+      "id": "tpxvLLkBqGr",
+      "sdkName": "enrollments",
+      "name": "Enrollments",
+      "primaryFieldId": "fkP9hyg8kEr",
+      "fields": [
+        {
+          "id": "fkP9hyg8kEr",
+          "sdkName": "label",
+          "definition": {
+            "name": "Label",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fdhVCj52b8B",
+          "sdkName": "personId",
+          "definition": {
+            "name": "Person Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ftG64stkAin",
+          "sdkName": "courseId",
+          "definition": {
+            "name": "Course Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fcszAqVhRJA",
+          "sdkName": "pathEnrollmentId",
+          "definition": {
+            "name": "Path Enrollment Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "foMEERQMvG5",
+          "sdkName": "ruleId",
+          "definition": {
+            "name": "Rule Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fiiWmeZsMTy",
+          "sdkName": "source",
+          "definition": {
+            "name": "Source",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "jSot",
+                  "label": "Assigned",
+                  "color": "purple"
+                },
+                {
+                  "value": "wjgd",
+                  "label": "Self-enrolled",
+                  "color": "orange"
+                },
+                {
+                  "value": "9tgU",
+                  "label": "Automatic",
+                  "color": "blue"
+                },
+                {
+                  "value": "nYSv",
+                  "label": "Path",
+                  "color": "gray"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "ftE8b6DvmsD",
+          "sdkName": "assignedById",
+          "definition": {
+            "name": "Assigned By Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "feNKTDaBQQj",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "8nQJ",
+                  "label": "Not started",
+                  "color": "purple"
+                },
+                {
+                  "value": "144a",
+                  "label": "In progress",
+                  "color": "orange"
+                },
+                {
+                  "value": "8R6y",
+                  "label": "Completed",
+                  "color": "blue"
+                },
+                {
+                  "value": "aP5g",
+                  "label": "Withdrawn",
+                  "color": "gray"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "feVGQPZsyDC",
+          "sdkName": "progress",
+          "definition": {
+            "name": "Progress",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "fx6CVDdVcAX",
+          "sdkName": "dueDate",
+          "definition": {
+            "name": "Due Date",
+            "type": "date",
+            "template": {
+              "dateFormat": "local"
+            }
+          }
+        },
+        {
+          "id": "ftYmPx3RCoo",
+          "sdkName": "enrolledAt",
+          "definition": {
+            "name": "Enrolled At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "f5ug2VbRYPc",
+          "sdkName": "startedAt",
+          "definition": {
+            "name": "Started At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fwwNPvcupnz",
+          "sdkName": "completedAt",
+          "definition": {
+            "name": "Completed At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "f5JzR21BTZ1",
+          "sdkName": "lastActivityAt",
+          "definition": {
+            "name": "Last Activity At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fnQmqZFPtWU",
+          "sdkName": "currentLessonId",
+          "definition": {
+            "name": "Current Lesson Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f1d1AvPYCXS",
+          "sdkName": "score",
+          "definition": {
+            "name": "Score",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "fwfgBKXWt4f",
+          "sdkName": "timeSpentSeconds",
+          "definition": {
+            "name": "Time Spent Seconds",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "frj1vmNsQ8Q",
+          "sdkName": "certificateId",
+          "definition": {
+            "name": "Certificate Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fhZKbseVrmG",
+          "sdkName": "cycle",
+          "definition": {
+            "name": "Cycle",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "fx6PPn2Xq2f",
+          "sdkName": "remindedAt",
+          "definition": {
+            "name": "Reminded At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fmH5JUk1VxG",
+          "sdkName": "overdueNotifiedAt",
+          "definition": {
+            "name": "Overdue Notified At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fkYHRJuqVSe",
+          "sdkName": "rating",
+          "definition": {
+            "name": "Rating",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "f1kwPpr5UDh",
+          "sdkName": "review",
+          "definition": {
+            "name": "Review",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "foNbkHsNYu8",
+          "sdkName": "ratedAt",
+          "definition": {
+            "name": "Rated At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fu29c62m65N",
+          "sdkName": "withdrawnAt",
+          "definition": {
+            "name": "Withdrawn At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tcVNMjXmfJt",
+      "sdkName": "pathEnrollments",
+      "name": "Path Enrollments",
+      "primaryFieldId": "f4S3xf5QCwp",
+      "fields": [
+        {
+          "id": "f4S3xf5QCwp",
+          "sdkName": "label",
+          "definition": {
+            "name": "Label",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fhyV3eTRV9P",
+          "sdkName": "personId",
+          "definition": {
+            "name": "Person Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "furKMyHTvBH",
+          "sdkName": "pathId",
+          "definition": {
+            "name": "Path Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fk6R7F4J2DN",
+          "sdkName": "ruleId",
+          "definition": {
+            "name": "Rule Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ffE61NuAt9W",
+          "sdkName": "source",
+          "definition": {
+            "name": "Source",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "kHm7",
+                  "label": "Assigned",
+                  "color": "purple"
+                },
+                {
+                  "value": "r2PH",
+                  "label": "Self-enrolled",
+                  "color": "orange"
+                },
+                {
+                  "value": "rg65",
+                  "label": "Automatic",
+                  "color": "blue"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fbdamsdPCdt",
+          "sdkName": "assignedById",
+          "definition": {
+            "name": "Assigned By Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f5PvG2cfPF9",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "qpVz",
+                  "label": "Not started",
+                  "color": "purple"
+                },
+                {
+                  "value": "tNsu",
+                  "label": "In progress",
+                  "color": "orange"
+                },
+                {
+                  "value": "222h",
+                  "label": "Completed",
+                  "color": "blue"
+                },
+                {
+                  "value": "iGK2",
+                  "label": "Withdrawn",
+                  "color": "gray"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fwmC1QJQEmn",
+          "sdkName": "progress",
+          "definition": {
+            "name": "Progress",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "fepyVnPUXGT",
+          "sdkName": "dueDate",
+          "definition": {
+            "name": "Due Date",
+            "type": "date",
+            "template": {
+              "dateFormat": "local"
+            }
+          }
+        },
+        {
+          "id": "fg4evVbbRPZ",
+          "sdkName": "enrolledAt",
+          "definition": {
+            "name": "Enrolled At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fcBwV4GWpqi",
+          "sdkName": "startedAt",
+          "definition": {
+            "name": "Started At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "f2CYEeW53nF",
+          "sdkName": "completedAt",
+          "definition": {
+            "name": "Completed At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "f7pE3dqGbRA",
+          "sdkName": "certificateId",
+          "definition": {
+            "name": "Certificate Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "frXYy3KGPE8",
+          "sdkName": "cycle",
+          "definition": {
+            "name": "Cycle",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "ff7pfQqUX7x",
+          "sdkName": "remindedAt",
+          "definition": {
+            "name": "Reminded At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fnpm8yeg8uG",
+          "sdkName": "overdueNotifiedAt",
+          "definition": {
+            "name": "Overdue Notified At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "ffExyGgTaMd",
+          "sdkName": "withdrawnAt",
+          "definition": {
+            "name": "Withdrawn At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tkPsvRC7iZh",
+      "sdkName": "lessonProgress",
+      "name": "Lesson Progress",
+      "primaryFieldId": "fdYX9tiggYD",
+      "fields": [
+        {
+          "id": "fdYX9tiggYD",
+          "sdkName": "enrollmentId",
+          "definition": {
+            "name": "Enrollment Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fdnFhb497iB",
+          "sdkName": "personId",
+          "definition": {
+            "name": "Person Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ftz66L2dvG2",
+          "sdkName": "courseId",
+          "definition": {
+            "name": "Course Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fraxwTSbGcP",
+          "sdkName": "lessonId",
+          "definition": {
+            "name": "Lesson Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fci7YqrMjZs",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "jwZZ",
+                  "label": "In progress",
+                  "color": "purple"
+                },
+                {
+                  "value": "qtd5",
+                  "label": "Completed",
+                  "color": "orange"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "faofEanFA5Z",
+          "sdkName": "startedAt",
+          "definition": {
+            "name": "Started At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "f8UGSJym9kj",
+          "sdkName": "completedAt",
+          "definition": {
+            "name": "Completed At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "f3ugqYNzoA8",
+          "sdkName": "timeSpentSeconds",
+          "definition": {
+            "name": "Time Spent Seconds",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "fpMjVxcpXrw",
+          "sdkName": "score",
+          "definition": {
+            "name": "Score",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "f6TtryPWqmb",
+          "sdkName": "attempts",
+          "definition": {
+            "name": "Attempts",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "ffwK2r9SLG4",
+          "sdkName": "state",
+          "definition": {
+            "name": "State",
+            "type": "long_text",
+            "template": {}
+          }
+        }
+      ]
+    },
+    {
+      "id": "thBjJo7c2RZ",
+      "sdkName": "quizAttempts",
+      "name": "Quiz Attempts",
+      "primaryFieldId": "fvEysKKyDPL",
+      "fields": [
+        {
+          "id": "fvEysKKyDPL",
+          "sdkName": "enrollmentId",
+          "definition": {
+            "name": "Enrollment Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fuSUyTYVxhw",
+          "sdkName": "personId",
+          "definition": {
+            "name": "Person Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fhW9vgQxyun",
+          "sdkName": "courseId",
+          "definition": {
+            "name": "Course Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f32HeQA44vX",
+          "sdkName": "lessonId",
+          "definition": {
+            "name": "Lesson Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fdLf6H1DDQN",
+          "sdkName": "number",
+          "definition": {
+            "name": "Number",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "f9SKi3JACRU",
+          "sdkName": "answers",
+          "definition": {
+            "name": "Answers",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fbh2eBoSApu",
+          "sdkName": "score",
+          "definition": {
+            "name": "Score",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "f5brGSnvF1M",
+          "sdkName": "passed",
+          "definition": {
+            "name": "Passed",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "foL7ofLv8oK",
+          "sdkName": "startedAt",
+          "definition": {
+            "name": "Started At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fayNoFogY9T",
+          "sdkName": "submittedAt",
+          "definition": {
+            "name": "Submitted At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "t9BfsKz9zqU",
+      "sdkName": "submissions",
+      "name": "Submissions",
+      "primaryFieldId": "ffRykai5rFb",
+      "fields": [
+        {
+          "id": "ffRykai5rFb",
+          "sdkName": "enrollmentId",
+          "definition": {
+            "name": "Enrollment Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ftM4g2ch3iL",
+          "sdkName": "personId",
+          "definition": {
+            "name": "Person Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f6xuECFQBRp",
+          "sdkName": "courseId",
+          "definition": {
+            "name": "Course Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "feN3U5B7p8B",
+          "sdkName": "lessonId",
+          "definition": {
+            "name": "Lesson Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f6G9bTAXWAQ",
+          "sdkName": "attempt",
+          "definition": {
+            "name": "Attempt",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "fbzaWFCHm2M",
+          "sdkName": "body",
+          "definition": {
+            "name": "Body",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fjcSedCD7jR",
+          "sdkName": "files",
+          "definition": {
+            "name": "Files",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "foq5AYkSiUm",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "mKMa",
+                  "label": "Submitted",
+                  "color": "purple"
+                },
+                {
+                  "value": "hkE6",
+                  "label": "Passed",
+                  "color": "orange"
+                },
+                {
+                  "value": "gqaa",
+                  "label": "Needs revision",
+                  "color": "blue"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fnUhBTrRvRv",
+          "sdkName": "grade",
+          "definition": {
+            "name": "Grade",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "frWnVCTGBxA",
+          "sdkName": "feedback",
+          "definition": {
+            "name": "Feedback",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f7Qqbkdn9Ck",
+          "sdkName": "gradedById",
+          "definition": {
+            "name": "Graded By Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f7rficZs3ao",
+          "sdkName": "submittedAt",
+          "definition": {
+            "name": "Submitted At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fgA8nqejhPo",
+          "sdkName": "gradedAt",
+          "definition": {
+            "name": "Graded At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "t76ZuCdLW6N",
+      "sdkName": "certificates",
+      "name": "Certificates",
+      "primaryFieldId": "frj2HHx5jR1",
+      "fields": [
+        {
+          "id": "frj2HHx5jR1",
+          "sdkName": "credentialId",
+          "definition": {
+            "name": "Credential Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fnbnp5rHnJP",
+          "sdkName": "personId",
+          "definition": {
+            "name": "Person Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fdXkSr7EzCk",
+          "sdkName": "courseId",
+          "definition": {
+            "name": "Course Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fdrP4zDia9M",
+          "sdkName": "pathId",
+          "definition": {
+            "name": "Path Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fwdc6K5VA3s",
+          "sdkName": "enrollmentId",
+          "definition": {
+            "name": "Enrollment Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ftHFoLX9HDL",
+          "sdkName": "title",
+          "definition": {
+            "name": "Title",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ftccRaR4Nwy",
+          "sdkName": "recipientName",
+          "definition": {
+            "name": "Recipient Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fhhm6FC6KHY",
+          "sdkName": "issuedAt",
+          "definition": {
+            "name": "Issued At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fdfaJVWdGX5",
+          "sdkName": "expiresAt",
+          "definition": {
+            "name": "Expires At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "f8gTbsJPSDt",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "3GmN",
+                  "label": "Active",
+                  "color": "purple"
+                },
+                {
+                  "value": "2uEE",
+                  "label": "Revoked",
+                  "color": "orange"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "frWfjA93j6i",
+          "sdkName": "revokedAt",
+          "definition": {
+            "name": "Revoked At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fa1qpHHANYT",
+          "sdkName": "revokedReason",
+          "definition": {
+            "name": "Revoked Reason",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fvzJEGCb9BU",
+          "sdkName": "issuedById",
+          "definition": {
+            "name": "Issued By Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f1VCQLoZUbu",
+          "sdkName": "score",
+          "definition": {
+            "name": "Score",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "t1GUf8EC86Z",
+      "sdkName": "sessions",
+      "name": "Sessions",
+      "primaryFieldId": "f5425zw1zxK",
+      "fields": [
+        {
+          "id": "f5425zw1zxK",
+          "sdkName": "title",
+          "definition": {
+            "name": "Title",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fo5htzhiuwK",
+          "sdkName": "courseId",
+          "definition": {
+            "name": "Course Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fcTFwKaQVEL",
+          "sdkName": "lessonId",
+          "definition": {
+            "name": "Lesson Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f3DE5nUriSt",
+          "sdkName": "description",
+          "definition": {
+            "name": "Description",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "frGmU3JRRNo",
+          "sdkName": "startsAt",
+          "definition": {
+            "name": "Starts At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fa2nMqkdFNV",
+          "sdkName": "endsAt",
+          "definition": {
+            "name": "Ends At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fqcKVEyTKYL",
+          "sdkName": "timezone",
+          "definition": {
+            "name": "Timezone",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fw8hNYoVyKL",
+          "sdkName": "location",
+          "definition": {
+            "name": "Location",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fshrkHi9yTa",
+          "sdkName": "meetingUrl",
+          "definition": {
+            "name": "Meeting Url",
+            "type": "url",
+            "template": {}
+          }
+        },
+        {
+          "id": "fp9aU3YzUSY",
+          "sdkName": "recordingUrl",
+          "definition": {
+            "name": "Recording Url",
+            "type": "url",
+            "template": {}
+          }
+        },
+        {
+          "id": "f9ZRXKRfXGE",
+          "sdkName": "capacity",
+          "definition": {
+            "name": "Capacity",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "fccyaNoUPoy",
+          "sdkName": "instructorId",
+          "definition": {
+            "name": "Instructor Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fjhsC35bXvV",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "qNC3",
+                  "label": "Scheduled",
+                  "color": "purple"
+                },
+                {
+                  "value": "rds6",
+                  "label": "Cancelled",
+                  "color": "orange"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "t9BkLcBGYQa",
+      "sdkName": "registrations",
+      "name": "Registrations",
+      "primaryFieldId": "fknNK4t433k",
+      "fields": [
+        {
+          "id": "fknNK4t433k",
+          "sdkName": "sessionId",
+          "definition": {
+            "name": "Session Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f8CWNLeGq34",
+          "sdkName": "personId",
+          "definition": {
+            "name": "Person Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fj2LwBvLmfa",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "vpXk",
+                  "label": "Registered",
+                  "color": "purple"
+                },
+                {
+                  "value": "hXHf",
+                  "label": "Waitlisted",
+                  "color": "orange"
+                },
+                {
+                  "value": "oGD7",
+                  "label": "Attended",
+                  "color": "blue"
+                },
+                {
+                  "value": "6Rxi",
+                  "label": "Absent",
+                  "color": "gray"
+                },
+                {
+                  "value": "hfjJ",
+                  "label": "Cancelled",
+                  "color": "red"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fnJ7JY3JGYf",
+          "sdkName": "registeredAt",
+          "definition": {
+            "name": "Registered At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fxqtRhw5Ww4",
+          "sdkName": "checkedInAt",
+          "definition": {
+            "name": "Checked In At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fbBans4oHzn",
+          "sdkName": "remindedAt",
+          "definition": {
+            "name": "Reminded At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tw1G9x3FVi8",
+      "sdkName": "assignmentRules",
+      "name": "Assignment Rules",
+      "primaryFieldId": "fkFPiWf5Xyu",
+      "fields": [
+        {
+          "id": "fkFPiWf5Xyu",
+          "sdkName": "name",
+          "definition": {
+            "name": "Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fmRZBWBNguZ",
+          "sdkName": "targetType",
+          "definition": {
+            "name": "Target Type",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "sNxB",
+                  "label": "Course",
+                  "color": "purple"
+                },
+                {
+                  "value": "d3BT",
+                  "label": "Path",
+                  "color": "orange"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fvijrhQN65T",
+          "sdkName": "courseId",
+          "definition": {
+            "name": "Course Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f8MXmfF3Mzr",
+          "sdkName": "pathId",
+          "definition": {
+            "name": "Path Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ff8J9xF3sD4",
+          "sdkName": "audience",
+          "definition": {
+            "name": "Audience",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "6MKz",
+                  "label": "Everyone",
+                  "color": "purple"
+                },
+                {
+                  "value": "cnGE",
+                  "label": "Groups",
+                  "color": "orange"
+                },
+                {
+                  "value": "cxWg",
+                  "label": "People",
+                  "color": "blue"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "foenait7oCT",
+          "sdkName": "groupIds",
+          "definition": {
+            "name": "Group Ids",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fhzfwVScXNz",
+          "sdkName": "personIds",
+          "definition": {
+            "name": "Person Ids",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fueVzUFopaB",
+          "sdkName": "dueMode",
+          "definition": {
+            "name": "Due Mode",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "eccg",
+                  "label": "None",
+                  "color": "purple"
+                },
+                {
+                  "value": "uzTs",
+                  "label": "Relative",
+                  "color": "orange"
+                },
+                {
+                  "value": "7JNo",
+                  "label": "Fixed",
+                  "color": "blue"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fkMAYU6uGso",
+          "sdkName": "dueDays",
+          "definition": {
+            "name": "Due Days",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "fsB9T5Rdzra",
+          "sdkName": "dueDate",
+          "definition": {
+            "name": "Due Date",
+            "type": "date",
+            "template": {
+              "dateFormat": "local"
+            }
+          }
+        },
+        {
+          "id": "f6PSwTwg4vF",
+          "sdkName": "recurrenceMonths",
+          "definition": {
+            "name": "Recurrence Months",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        },
+        {
+          "id": "ffQ5KbSBC6Y",
+          "sdkName": "includeFutureMembers",
+          "definition": {
+            "name": "Include Future Members",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "fwEnUDJyVEi",
+          "sdkName": "sendEmail",
+          "definition": {
+            "name": "Send Email",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "f3mNgVb6gKi",
+          "sdkName": "status",
+          "definition": {
+            "name": "Status",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "3mbY",
+                  "label": "Active",
+                  "color": "purple"
+                },
+                {
+                  "value": "s8HX",
+                  "label": "Paused",
+                  "color": "orange"
+                },
+                {
+                  "value": "fxQm",
+                  "label": "Archived",
+                  "color": "blue"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "foxNP7aoJuD",
+          "sdkName": "createdById",
+          "definition": {
+            "name": "Created By Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f1otYgW8X1a",
+          "sdkName": "lastRunAt",
+          "definition": {
+            "name": "Last Run At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "trzRWcwARaA",
+      "sdkName": "comments",
+      "name": "Comments",
+      "primaryFieldId": "fxwpZAiBgSk",
+      "fields": [
+        {
+          "id": "fxwpZAiBgSk",
+          "sdkName": "body",
+          "definition": {
+            "name": "Body",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fkRhitAfPBr",
+          "sdkName": "courseId",
+          "definition": {
+            "name": "Course Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "feVHpVeDccZ",
+          "sdkName": "lessonId",
+          "definition": {
+            "name": "Lesson Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fqVWcjNJBs8",
+          "sdkName": "personId",
+          "definition": {
+            "name": "Person Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "frfANwk7azZ",
+          "sdkName": "parentId",
+          "definition": {
+            "name": "Parent Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f6Cy4EA9Xxa",
+          "sdkName": "postedAt",
+          "definition": {
+            "name": "Posted At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "f7iPdrLvB8r",
+          "sdkName": "editedAt",
+          "definition": {
+            "name": "Edited At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "fk4hKAXhbn8",
+          "sdkName": "pinned",
+          "definition": {
+            "name": "Pinned",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "fstaHztKQYH",
+          "sdkName": "resolvedAt",
+          "definition": {
+            "name": "Resolved At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tu6aT6pCiX1",
+      "sdkName": "notifications",
+      "name": "Notifications",
+      "primaryFieldId": "fhPQSAGttWL",
+      "fields": [
+        {
+          "id": "fhPQSAGttWL",
+          "sdkName": "title",
+          "definition": {
+            "name": "Title",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fiqVqdr958y",
+          "sdkName": "body",
+          "definition": {
+            "name": "Body",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ftX7gFRgREt",
+          "sdkName": "type",
+          "definition": {
+            "name": "Type",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "frQHg4a1tYq",
+          "sdkName": "app",
+          "definition": {
+            "name": "App",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "21C3",
+                  "label": "Admin",
+                  "color": "purple"
+                },
+                {
+                  "value": "oiCx",
+                  "label": "Learn",
+                  "color": "orange"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "ff8RcpsxGy6",
+          "sdkName": "recipientId",
+          "definition": {
+            "name": "Recipient Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fpVARj2cTHj",
+          "sdkName": "actorId",
+          "definition": {
+            "name": "Actor Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fkarRfqbyqq",
+          "sdkName": "courseId",
+          "definition": {
+            "name": "Course Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f6SGzrbCuSn",
+          "sdkName": "pathId",
+          "definition": {
+            "name": "Path Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fcTmAVn5FGZ",
+          "sdkName": "link",
+          "definition": {
+            "name": "Link",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ffygXhR1Yco",
+          "sdkName": "occurredAt",
+          "definition": {
+            "name": "Occurred At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "f5MyQB2QPpV",
+          "sdkName": "readAt",
+          "definition": {
+            "name": "Read At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        },
+        {
+          "id": "f2dvKTfUQQm",
+          "sdkName": "archivedAt",
+          "definition": {
+            "name": "Archived At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "t7QuxM8WWHV",
+      "sdkName": "activity",
+      "name": "Activity",
+      "primaryFieldId": "fhmiDns7bpX",
+      "fields": [
+        {
+          "id": "fhmiDns7bpX",
+          "sdkName": "type",
+          "definition": {
+            "name": "Type",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fjQywdpVHFM",
+          "sdkName": "personId",
+          "definition": {
+            "name": "Person Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f5TYFy694j8",
+          "sdkName": "actorId",
+          "definition": {
+            "name": "Actor Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f9FnAkAVQQr",
+          "sdkName": "courseId",
+          "definition": {
+            "name": "Course Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fiE2VYmp2Sq",
+          "sdkName": "pathId",
+          "definition": {
+            "name": "Path Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fgi9f3r2hSx",
+          "sdkName": "lessonId",
+          "definition": {
+            "name": "Lesson Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fq1YcxmuA7n",
+          "sdkName": "enrollmentId",
+          "definition": {
+            "name": "Enrollment Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f9f1Jc8KMKL",
+          "sdkName": "data",
+          "definition": {
+            "name": "Data",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fnbWH87LGPr",
+          "sdkName": "occurredAt",
+          "definition": {
+            "name": "Occurred At",
+            "type": "datetime",
+            "template": {
+              "timezone": "",
+              "dateFormat": "local",
+              "timeFormat": "12h",
+              "displayTimeZone": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "t8Me1KBL6d6",
+      "sdkName": "emailTemplates",
+      "name": "Email Templates",
+      "primaryFieldId": "fhz8esjcGMK",
+      "fields": [
+        {
+          "id": "fhz8esjcGMK",
+          "sdkName": "name",
+          "definition": {
+            "name": "Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fnKEY8pZRwW",
+          "sdkName": "subject",
+          "definition": {
+            "name": "Subject",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fbVR5t7aBrY",
+          "sdkName": "body",
+          "definition": {
+            "name": "Body",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fceFcXWJ4JX",
+          "sdkName": "trigger",
+          "definition": {
+            "name": "Trigger",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "qDbJ",
+                  "label": "Course assigned",
+                  "color": "purple"
+                },
+                {
+                  "value": "4ve7",
+                  "label": "Path assigned",
+                  "color": "orange"
+                },
+                {
+                  "value": "iNfQ",
+                  "label": "Due reminder",
+                  "color": "blue"
+                },
+                {
+                  "value": "5a8M",
+                  "label": "Overdue",
+                  "color": "gray"
+                },
+                {
+                  "value": "i2ze",
+                  "label": "Manager overdue digest",
+                  "color": "red"
+                },
+                {
+                  "value": "4vmz",
+                  "label": "Certificate issued",
+                  "color": "yellow"
+                },
+                {
+                  "value": "v44C",
+                  "label": "Certificate expiring",
+                  "color": "green"
+                },
+                {
+                  "value": "tgiJ",
+                  "label": "Submission graded",
+                  "color": "pink"
+                },
+                {
+                  "value": "5tiW",
+                  "label": "Session registered",
+                  "color": "lime"
+                },
+                {
+                  "value": "i23R",
+                  "label": "Session reminder",
+                  "color": "tangerine"
+                },
+                {
+                  "value": "8LkL",
+                  "label": "Invitation",
+                  "color": "emerald"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fmSFKwYhM5Z",
+          "sdkName": "enabled",
+          "definition": {
+            "name": "Enabled",
+            "type": "checkbox",
+            "template": {}
+          }
+        },
+        {
+          "id": "fmRLyg3SHNV",
+          "sdkName": "position",
+          "definition": {
+            "name": "Position",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "tpXFo3DzfgV",
+      "sdkName": "views",
+      "name": "Views",
+      "primaryFieldId": "f8LV5cUwnLc",
+      "fields": [
+        {
+          "id": "f8LV5cUwnLc",
+          "sdkName": "name",
+          "definition": {
+            "name": "Name",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "f5erAbT6h1W",
+          "sdkName": "ownerId",
+          "definition": {
+            "name": "Owner Id",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "fqfFRpY5F6C",
+          "sdkName": "scope",
+          "definition": {
+            "name": "Scope",
+            "type": "single_select",
+            "template": {
+              "options": [
+                {
+                  "value": "fNdZ",
+                  "label": "Personal",
+                  "color": "purple"
+                },
+                {
+                  "value": "eym1",
+                  "label": "Shared",
+                  "color": "orange"
+                }
+              ],
+              "disableColors": false
+            }
+          }
+        },
+        {
+          "id": "fnY7MtquJwk",
+          "sdkName": "page",
+          "definition": {
+            "name": "Page",
+            "type": "single_line_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ft4GXHiXkfD",
+          "sdkName": "config",
+          "definition": {
+            "name": "Config",
+            "type": "long_text",
+            "template": {}
+          }
+        },
+        {
+          "id": "ffDppz4TyCG",
+          "sdkName": "position",
+          "definition": {
+            "name": "Position",
+            "type": "number",
+            "template": {
+              "numberFormat": "local",
+              "decimalPlaces": 0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

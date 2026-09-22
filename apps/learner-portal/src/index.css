@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /*
+     * Warm paper and ink, not the blue-grey every dashboard ships with. The
+     * brand colour is an accent used a few times a page — one button, links,
+     * the focus ring — never a wash, so an organization's own colour can replace
+     * it without the page falling apart.
+     */
+    --canvas: 38 30% 97%;
+    --background: 40 40% 99.4%;
+    --foreground: 28 9% 13%;
+    --card: 40 40% 99.4%;
+    --card-foreground: 28 9% 13%;
+    --popover: 40 40% 99.4%;
+    --popover-foreground: 28 9% 13%;
+    --muted: 36 20% 93.5%;
+    /* 5.6:1 on paper — secondary text stays readable, not decorative. */
+    --muted-foreground: 30 7% 38%;
+    /* Tertiary text: 4.6:1 on paper. */
+    --faint: 30 6% 45%;
+    --subtle: 38 26% 98.2%;
+    --border: 34 15% 87.5%;
+    /* A form control's border is often the only thing marking the control, so it carries 3:1. */
+    --input: 32 9% 58%;
+    /* Replaced at runtime by the organization's brand colour (see lib/brand.ts). */
+    --primary: 162 52% 22%;
+    --primary-foreground: 40 40% 99%;
+    --secondary: 36 18% 93%;
+    --secondary-foreground: 28 9% 16%;
+    --accent: 36 22% 94.5%;
+    --accent-foreground: 28 9% 13%;
+    --destructive: 356 68% 43%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 162 52% 22%;
+    --radius: 0.5rem;
+
+    /* Semantic tones as RGB channels, each >= 4.5:1 against paper. */
+    --tone-warning: 165 79 19;
+    --tone-info: 29 88 137;
+    --tone-success: 22 112 65;
+    --tone-danger: 187 38 44;
+    --tone-accent: 41 82 148;
+    --tone-neutral: 111 104 96;
+
+    --shadow-2xs: 0 1px 0 rgb(0 0 0 / 0.03);
+    --shadow-xs: 0 1px 2px rgb(16 16 24 / 0.05);
+    --shadow-sm: 0 1px 3px rgb(16 16 24 / 0.07), 0 1px 1px rgb(16 16 24 / 0.03);
+    --shadow: 0 2px 4px rgb(16 16 24 / 0.06), 0 1px 2px rgb(16 16 24 / 0.04);
+    --shadow-md: 0 6px 16px rgb(16 16 24 / 0.08), 0 1px 3px rgb(16 16 24 / 0.05);
+    --shadow-lg: 0 16px 40px rgb(16 16 24 / 0.12), 0 2px 6px rgb(16 16 24 / 0.06);
+    --shadow-xl: 0 24px 56px rgb(16 16 24 / 0.16), 0 4px 12px rgb(16 16 24 / 0.08);
+    --shadow-2xl: 0 32px 80px rgb(16 16 24 / 0.22);
+
+    --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+    /* Titles are set in a serif: this is a an academy, not a dashboard. */
+    --font-serif: 'Source Serif 4', ui-serif, Georgia, 'Times New Roman', serif;
+    --font-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+  }
+
+  .dark {
+    /* Warm charcoal, so the paper feeling survives the lights going out. */
+    --canvas: 30 8% 7%;
+    --background: 30 7% 10%;
+    --foreground: 36 16% 92%;
+    --card: 30 7% 11%;
+    --card-foreground: 36 16% 92%;
+    --popover: 30 7% 12%;
+    --popover-foreground: 36 16% 92%;
+    --muted: 30 6% 16%;
+    --muted-foreground: 34 9% 68%;
+    --faint: 34 8% 59%;
+    --subtle: 30 7% 11.5%;
+    --border: 30 6% 19%;
+    --input: 30 6% 40%;
+    --primary: 162 46% 66%;
+    --primary-foreground: 165 45% 8%;
+    --secondary: 30 6% 17%;
+    --secondary-foreground: 36 14% 90%;
+    --accent: 30 6% 17%;
+    --accent-foreground: 36 16% 93%;
+    --destructive: 356 68% 62%;
+    --destructive-foreground: 30 10% 7%;
+    --ring: 162 46% 66%;
+
+    /* Re-stepped for the dark surface, not flipped: all >= 7:1 on it. */
+    --tone-warning: 240 180 70;
+    --tone-info: 130 185 240;
+    --tone-success: 110 210 160;
+    --tone-danger: 246 130 130;
+    --tone-accent: 147 184 235;
+    --tone-neutral: 170 162 152;
+
+    --shadow-xs: 0 1px 2px rgb(0 0 0 / 0.4);
+    --shadow-sm: 0 1px 3px rgb(0 0 0 / 0.45);
+    --shadow: 0 2px 6px rgb(0 0 0 / 0.45);
+    --shadow-md: 0 6px 16px rgb(0 0 0 / 0.5), 0 0 0 1px rgb(255 255 255 / 0.03);
+    --shadow-lg: 0 16px 40px rgb(0 0 0 / 0.55), 0 0 0 1px rgb(255 255 255 / 0.04);
+    --shadow-xl: 0 24px 64px rgb(0 0 0 / 0.6), 0 0 0 1px rgb(255 255 255 / 0.05);
+    --shadow-2xl: 0 32px 90px rgb(0 0 0 / 0.7);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    color-scheme: light;
+    -webkit-text-size-adjust: 100%;
+  }
+  html.dark {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-canvas text-foreground antialiased;
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: 'cv01', 'cv02', 'cv03', 'cv04', 'cv11', 'ss03';
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    letter-spacing: -0.018em;
+    text-wrap: balance;
+  }
+
+  /* The serif carries its own optical sizing, so the sans tracking would over-tighten it. */
+  .font-serif {
+    letter-spacing: -0.005em;
+    font-optical-sizing: auto;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.22);
+  }
+
+  :focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+  }
+
+  /* People who asked for less motion get none. */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .skeleton {
+    background: linear-gradient(90deg, hsl(var(--muted)) 0%, hsl(var(--accent)) 50%, hsl(var(--muted)) 100%);
+    background-size: 200% 100%;
+    @apply animate-shimmer rounded-md;
+  }
+
+  /* A quiet pill for answer values and metadata. */
+  .chip-soft {
+    @apply inline-flex max-w-full items-center rounded-md bg-muted px-2 py-0.5 text-sm leading-6 text-foreground;
+  }
+
+  .kbd {
+    @apply inline-flex h-5 min-w-[20px] items-center justify-center rounded border px-1 font-sans text-2xs font-medium leading-none;
+    background: hsl(var(--muted));
+    color: hsl(var(--muted-foreground));
+    box-shadow: 0 1px 0 hsl(var(--border));
+  }
+
+  /* Markdown inside help text and short descriptions: no prose margins. */
+  .md-compact :where(p) {
+    margin: 0;
+  }
+  .md-compact :where(p + p) {
+    margin-top: 0.5em;
+  }
+  .md-compact :where(ul, ol) {
+    margin: 0.35em 0 0;
+    padding-left: 1.2em;
+  }
+  .md-compact :where(ul) {
+    list-style: disc;
+  }
+  .md-compact :where(ol) {
+    list-style: decimal;
+  }
+  .md-compact :where(strong) {
+    font-weight: 600;
+    color: hsl(var(--foreground));
+  }
+
+  .prose-lms {
+    @apply prose max-w-none dark:prose-invert;
+    --tw-prose-body: hsl(var(--foreground));
+    --tw-prose-headings: hsl(var(--foreground));
+    --tw-prose-bold: hsl(var(--foreground));
+    --tw-prose-links: hsl(var(--primary));
+    --tw-prose-code: hsl(var(--foreground));
+    --tw-prose-pre-bg: hsl(var(--muted));
+    --tw-prose-pre-code: hsl(var(--foreground));
+    --tw-prose-quotes: hsl(var(--muted-foreground));
+    --tw-prose-quote-borders: hsl(var(--border));
+    --tw-prose-bullets: hsl(var(--muted-foreground));
+    --tw-prose-counters: hsl(var(--muted-foreground));
+    --tw-prose-hr: hsl(var(--border));
+    --tw-prose-invert-body: hsl(var(--foreground));
+    --tw-prose-invert-headings: hsl(var(--foreground));
+    --tw-prose-invert-bold: hsl(var(--foreground));
+    --tw-prose-invert-links: hsl(var(--primary));
+    --tw-prose-invert-code: hsl(var(--foreground));
+    --tw-prose-invert-pre-bg: hsl(var(--muted));
+    --tw-prose-invert-pre-code: hsl(var(--foreground));
+    --tw-prose-invert-quotes: hsl(var(--muted-foreground));
+    --tw-prose-invert-quote-borders: hsl(var(--border));
+    --tw-prose-invert-bullets: hsl(var(--muted-foreground));
+    --tw-prose-invert-counters: hsl(var(--muted-foreground));
+    --tw-prose-invert-hr: hsl(var(--border));
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .prose-lms :where(p) {
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+  }
+  .prose-lms :where(h1, h2, h3) {
+    margin-top: 1.4em;
+    margin-bottom: 0.5em;
+    letter-spacing: -0.015em;
+    font-weight: 600;
+  }
+  .prose-lms :where(h1) {
+    font-size: 1.4em;
+  }
+  .prose-lms :where(h2) {
+    font-size: 1.15em;
+  }
+  .prose-lms :where(h3) {
+    font-size: 1em;
+  }
+  .prose-lms :where(ul, ol) {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  .prose-lms :where(li) {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+  }
+  .prose-lms :where(code):not(:where(pre code)) {
+    @apply rounded bg-muted px-1 py-0.5 text-[0.85em] font-normal;
+  }
+  .prose-lms :where(code)::before,
+  .prose-lms :where(code)::after {
+    content: none;
+  }
+  .prose-lms :where(> :first-child) {
+    margin-top: 0;
+  }
+  .prose-lms :where(> :last-child) {
+    margin-bottom: 0;
+  }
+
+  .scrollbar-none {
+    scrollbar-width: none;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/*
+ * shadcn's overlay is black/80 — far heavier than a calm academy should feel.
+ * Outside @layer on purpose: inside it, Tailwind treats .fixed/.inset-0 as utilities and emits variant copies with broken selectors.
+ */
+div[data-state][class*='bg-black'][class*='inset-0'] {
+  background-color: hsl(30 12% 8% / 0.36);
+  backdrop-filter: blur(2px);
+}
+.dark div[data-state][class*='bg-black'][class*='inset-0'] {
+  background-color: hsl(30 12% 2% / 0.6);
+}
+
+@media print {
+  @page {
+    margin: 16mm 14mm;
+  }
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 11pt;
+  }
+  html.dark {
+    color-scheme: light;
+  }
+  .no-print,
+  [data-sonner-toaster] {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-plain {
+    box-shadow: none !important;
+    border-color: #ddd !important;
+    background: #fff !important;
+  }
+  a[href^='http']::after {
+    content: ' (' attr(href) ')';
+    font-size: 9pt;
+    color: #555;
+    word-break: break-all;
+  }
+  section,
+  dl > div {
+    break-inside: avoid;
+  }
+}
